@@ -3,6 +3,7 @@ from flask_restful import Resource
 from tools.translate_my_subs import *   # Cambiar por funciones concretas si es necesario en lugar de todo el namespace
 
 class Translator(Resource):
+    # Main translator class
     def post(self):
         if "file" in request.files:
             try:
