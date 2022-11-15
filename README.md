@@ -24,7 +24,7 @@ app_translator_with_docker>docker run -d -p <port>:5000 --name <container_name> 
 ### Call from console (APP USAGE)
 
 ```console
-app_translator_with_docker>curl -X POST localhost:<port>/resumenes -H 'Content-Type: application/json' -d '{"text":"Hola esto es una prueba del traductor"}'
+app_translator_with_docker>curl -X POST localhost:<port>/translate -H 'Content-Type: application/json' -d '{"text":"Hola esto es una prueba del traductor"}'
 
 ```
 
