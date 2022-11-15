@@ -1,6 +1,6 @@
 ### 🐳 Using Docker and REST APIs 🐳
 
-This repo contains dockerized version of the translator module used in [Suntitle Translation Project](https://github.com/Razwand/subtitle_translation).
+This repo contains dockerized version of the translator module used in [Subtitle Translation Project](https://github.com/Razwand/subtitle_translation).
 The goal is to build a simple app to translate text from Spanish to English, so this is a simplified version of the original project.
 
 ## Requirements
