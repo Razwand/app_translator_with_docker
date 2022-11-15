@@ -2,7 +2,7 @@ from flask import request, jsonify, make_response
 from flask_restful import Resource
 from tools.translate_my_subs import *   # Cambiar por funciones concretas si es necesario en lugar de todo el namespace
 
-class ResumenAbs(Resource):
+class translator(Resource):
     def post(self):
         if "file" in request.files:
             try:
