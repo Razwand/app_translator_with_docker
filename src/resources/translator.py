@@ -5,13 +5,8 @@ from tools.translate_my_subs import *   # Cambiar por funciones concretas si es 
 class Translator(Resource):
     # Main translator class
     def post(self):
-        if "file" in request.files:
-            try:
-                input_data = request.files["file"].read().decode("latin-1")
-            except:
-                input_data = None
-        else:
-            input_data = request.get_json().get("text", "")
+        
+        input_data = request.get_json().get("text", "")
         if not input_data:
             return make_response(jsonify(errmsg="input_data is empty or there was an error on file reading"), 417)
         try:

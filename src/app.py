@@ -1,7 +1,7 @@
 from os import getenv
 from flask import Flask
 from flask_restful import Api as ApiRest
-from resources.resumenAbs import ResumenAbs
+from resources.translator import Translator
 from resources.ping import Ping
 from config_params import init_cfg
 
@@ -12,7 +12,7 @@ api = ApiRest(app)
 
 init_cfg(app)
 
-api.add_resource(Translator, "/translate")
+api.add_resource(Translator, "/traductor")
 api.add_resource(Ping, "/ping")                  
                 
 

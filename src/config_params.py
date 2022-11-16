@@ -34,7 +34,5 @@ def init_cfg(app):
             STATUS_CODES=sn(**STATUS_CODES),
             HOST= "0.0.0.0",
             PORT= 5000,
-            JSON_AS_ASCII = False, #No Ascii, reposne json, utf-8
-            JSON_SORT_KEYS = False, # No sort key json in response
              
         )
