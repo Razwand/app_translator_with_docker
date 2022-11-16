@@ -12,7 +12,7 @@ api = ApiRest(app)
 
 init_cfg(app)
 
-api.add_resource(Translator, "/traductor")
+api.add_resource(Translator, "/translate")
 api.add_resource(Ping, "/ping")                  
                 
 
