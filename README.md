@@ -5,11 +5,6 @@ The goal is to build a simple app to translate text from Spanish to English, so 
 
 ## Requirements
 - Docker
-- 🤗[Translation Model](https://huggingface.co/razwand/opus-mt-en-mul-finetuned_en_sp_translator) 
-
-⚠️Note:  the model has to be downloaded and stored in /data folder
-
-## How to
 
 ### Start docker container on a given port.
 
@@ -24,7 +19,7 @@ app_translator_with_docker>docker run -d -p <port>:5000 --name <container_name> 
 ### Call from console (APP USAGE)
 
 ```console
-app_translator_with_docker>curl -X POST localhost:<port>/translate -H 'Content-Type: application/json' -d '{"text":"Hola esto es una prueba del traductor"}'
+app_translator_with_docker>curl -X POST localhost:<port>/translate -H "Content-Type:application/json" -d "{\"text\":\"Hola esto es una prueba del traductor\"}"
 
 ```
 
